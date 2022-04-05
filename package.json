@@ -1,0 +1,23 @@
+{
+  "name": "node-server-pages",
+  "version": "1.0.0",
+  "description": "Use Node.js to create dynamic server pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index",
+    "start": "node index",
+    "build": "npx pkg -t linux . && rm build/nsp && mv node-server-pages build/nsp"
+  },
+  "author": "neila",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.1.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.2"
+  },
+  "bin": "index.js"
+}
